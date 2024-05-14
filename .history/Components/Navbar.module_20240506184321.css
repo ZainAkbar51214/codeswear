@@ -1,0 +1,30 @@
+
+/* Navbar css */
+.navContainer {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto; 
+    padding: 20px;
+  }
+  
+  .navContainer .navRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .navContainer .navRow .navCol{
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+  
+  .navContainer ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navContainer ul li {
+    list-style-type: none;
+    margin: 0 20px;
+  }

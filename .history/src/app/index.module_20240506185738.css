@@ -1,0 +1,40 @@
+.sec{
+  background-image: url('/Home.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+.container{
+  width: 100%;
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.col{
+  flex: 0 0 100%;
+  padding: 10px;
+  z-index: 1;
+}
+.col h1{
+  color: white;
+}
