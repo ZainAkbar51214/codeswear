@@ -29,7 +29,7 @@ const Slug = () => {
                         <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-40 h-auto object-cover object-top rounded" src="https://m.media-amazon.com/images/I/61vNeA0eciL._AC_SX569_.jpg" />
                         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-sm title-font text-gray-500 tracking-widest">CODESWEAR</h2>
-                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Wear the code (XL/BLUE) </h1>
+                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Wear the code (XL/BLUe) </h1>
                             <div className="flex mb-4">
                                 <span className="flex items-center">
                                     <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 text-slate-500" viewBox="0 0 24 24">
