@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 
 function MyApp({ Component, pageProps, prop }) {
   const [cart, setCart] = useState({});
-  const [subTotal, setSubTotal] = useState(0);
+  const [subTotal, setSubTotal] = useState(0)
 
   // useEffect 
   useEffect(() => {
@@ -21,17 +21,18 @@ function MyApp({ Component, pageProps, prop }) {
       localStorage.clear();
     }
 
-  }, []);
+  }, [])
+
 
   // Local Storage data
   const saveCart = (myCart) => {
     localStorage.setItem("cart", myCart)
-    let subT = 0;
-    let keys = Object.keys(myCart);
-    for(let i=0; i<keys.length; i++){
-      subT += myCart[keys[i]]["price"] * myCart[keys[i]].qty;
+    let subt = 0;
+    let keys = Object.keys(cart);
+    for(let i = 0; keys.length; i++){
+      subt += myCart[keys[i]].price * myCart[keys[i]].qty;
     }
-    setSubTotal(subT);
+    setSubTotal(subt);
   }
 
   // Add to cart function
@@ -40,30 +41,30 @@ function MyApp({ Component, pageProps, prop }) {
     if (itemCode in cart) {
       newCart[itemCode].qty = cart[itemCode].qty + qty;
     } else {
-      newCart[itemCode] = {qty: 1, price, name, size, variant}
+      newCart[itemCode] = { qty: 1, price, name, size, variant }
     }
     setCart(newCart);
-    saveCart(newCart);
+    saveCart();
   }
 
   // Remove from cart function
   const removeToCart = (itemCode, qty, price, name, size, variant) => {
     let newCart = cart;
     if (itemCode in cart) {
-      newCart[itemCode]["qty"] = cart[itemCode].qty - qty;
+      newCart[itemCode].qty = cart[itemCode].qty - qty;
     }
-    if (newCart[itemCode].qty <= 0) {
+    if (newCart[itemCode]["qty"] <= 0) {
       delete newCart[itemCode]
     }
     setCart(newCart);
-    saveCart(newCart);
+    saveCart();
   }
 
+  // Clear Function
   const clearCart = () => {
     setCart({});
     saveCart({});
   }
-
   return (
     <RootLayout>
       <Navbar cart={cart} addToCart={addToCart} removeToCart={removeToCart} clearCart={clearCart} subTotal={subTotal} />

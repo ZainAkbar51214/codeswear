@@ -7,8 +7,8 @@ import { IoMdCart } from "react-icons/io";
 import { IoCloseCircle, IoBagCheck } from "react-icons/io5";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 
-const Navbar = ({ cart, addToCart, removeToCart, clearCart, subTotal }) => {
-    // console.log(cart, addToCart, removeToCart, clearCart, subTotal);
+const Navbar = ({cart, addToCart, removeToCart, clearCart, subTotal}) => {
+    console.log(cart, addToCart, removeToCart, clearCart, subTotal);
 
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {
@@ -38,7 +38,6 @@ const Navbar = ({ cart, addToCart, removeToCart, clearCart, subTotal }) => {
                             </Link>
                         </div>
                     </div>
-                    
                     <div className={`${globalNavbar.navCol}`}>
                         <div className={`${globalNavbar.navMenu}`}>
                             <ul className={`${globalNavbar.list}`}>
@@ -64,20 +63,17 @@ const Navbar = ({ cart, addToCart, removeToCart, clearCart, subTotal }) => {
                     <h2 className='font-bold text-xl text-white'>Shopping Cart</h2>
                     <span onClick={toggleCart} className='absolute top-2 right-2 cursor-pointer text-2xl text-pink-50'><IoCloseCircle /></span>
                     <ol className='list-decimal text-white'>
-                        {Object.keys(cart).length == 0 && <div className='m-2'>Your cart is Empty!</div>}
-                        {Object.keys(cart).map((k) => {
-                            return <li key={k}>
-                                <div className='item flex my-5'>
-                                    <div className='w-2/3 font-semibold'>{cart[k].name}</div>
-                                    <div className='flex items-center justify-center font-semibold w-1/3'><CiCircleMinus onClick={()=>{removeToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)}} className='mx-1 text-2xl cursor-pointer' /> {cart[k].qty} <CiCirclePlus onClick={()=>{addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)}} className='mx-1 text-pink-400 text-2xl cursor-pointer' /></div>
-                                </div>
-                            </li>
-                        })}
+                        <li>
+                            <div className='item flex my-5'>
+                                <div className='w-2/3 font-semibold'>T-Shirt - Wear the code</div>
+                                <div className='flex items-center justify-center font-semibold w-1/3'><CiCircleMinus className='mx-1 text-2xl cursor-pointer' /> 1 <CiCirclePlus className='mx-1 text-pink-400 text-2xl cursor-pointer' /></div>
+                            </div>
+                        </li>
 
                     </ol>
                     <div className="flex gap-2">
                         <button className="flex  items-center gap-2 mx-auto text-white bg-slate-500 border-0 py-2 px-4 focus:outline-none hover:bg-slate-600 rounded text-lg"><IoBagCheck /> Checkout</button>
-                        <button onClick={clearCart} className="flex items-center gap-2 mx-auto text-white bg-slate-500 border-0 py-2 px-4 focus:outline-none hover:bg-slate-600 rounded text-lg">Clear Cart</button>
+                        <button onClick={removeToCart} className="flex items-center gap-2 mx-auto text-white bg-slate-500 border-0 py-2 px-4 focus:outline-none hover:bg-slate-600 rounded text-lg">Clear Cart</button>
                     </div>
                 </div>
             </nav>

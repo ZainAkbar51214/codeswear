@@ -1,9 +1,0 @@
-.container{
-  width: 100%;
-  max-width: 1350px;
-  margin: auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
