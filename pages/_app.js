@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, prop }) {
 
   // Local Storage data
   const saveCart = (myCart) => {
-    localStorage.setItem("cart", myCart)
+    localStorage.setItem("cart", JSON.stringify(myCart))
     let subT = 0;
     let keys = Object.keys(myCart);
     for(let i=0; i<keys.length; i++){
@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps, prop }) {
   // Add to cart function
   const addToCart = (itemCode, qty, price, name, size, variant) => {
     let newCart = cart;
+    console.log(newCart);
     if (itemCode in cart) {
       newCart[itemCode].qty = cart[itemCode].qty + qty;
     } else {
