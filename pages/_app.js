@@ -15,12 +15,12 @@ function MyApp({ Component, pageProps, prop }) {
     try {
       if (localStorage.getItem("cart")) {
         setCart(JSON.parse(localStorage.getItem("cart")))
+        saveCart(cart);
       }
     } catch (error) {
       console.log(error);
       localStorage.clear();
     }
-
   }, []);
 
   // Local Storage data
@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps, prop }) {
 
   return (
     <RootLayout>
-      <Navbar cart={cart} addToCart={addToCart} removeToCart={removeToCart} clearCart={clearCart} subTotal={subTotal} />
+      <Navbar key={subTotal} cart={cart} addToCart={addToCart} removeToCart={removeToCart} clearCart={clearCart} subTotal={subTotal} />
       <Component cart={cart} addToCart={addToCart} removeToCart={removeToCart} clearCart={clearCart} subTotal={subTotal} {...pageProps} />
       <Footer />
     </RootLayout>

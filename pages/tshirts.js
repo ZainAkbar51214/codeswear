@@ -6,9 +6,9 @@ const Tshirts = () => {
     <>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap justify-center -m-4">
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -21,7 +21,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -34,7 +34,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -47,7 +47,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -60,7 +60,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -73,7 +73,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -86,7 +86,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -99,7 +99,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -112,7 +112,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -125,7 +125,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -138,7 +138,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
@@ -151,7 +151,7 @@ const Tshirts = () => {
             </div>
             </Link>
             <Link href={'/product/wear-the-code'} className='contents'>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-sm">
+            <div className="lg:w-1/4 md:w-1/2 flex flex-col items-center p-4 w-full shadow-sm">
               <p className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block" src="https://m.media-amazon.com/images/I/813X6oCL-ML._AC_SX569_.jpg" />
               </p>
